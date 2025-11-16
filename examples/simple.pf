@@ -1,0 +1,14 @@
+# Simple PathForm Example
+
+user.name = "Mehmet"
+user.age = 49
+user.email = "mehmet@example.com"
+
+preferences.theme = dark
+preferences.language = tr
+preferences.notifications = true
+
+tags[0] = developer
+tags[1] = python
+tags[2] = javascript
+

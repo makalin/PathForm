@@ -1,0 +1,52 @@
+{
+  "name": "pathform",
+  "version": "0.1.0",
+  "description": "A token-cheap, LLM-friendly text format that round-trips cleanly to JSON",
+  "main": "pathform.js",
+  "browser": "pathform.browser.js",
+  "types": "pathform.d.ts",
+  "scripts": {
+    "test": "node test/test.js",
+    "lint": "eslint pathform.js pathform.browser.js",
+    "format": "prettier --write '*.js' '*.ts'",
+    "build": "npm run test"
+  },
+  "bin": {
+    "pathform2json": "./pathform2json.js",
+    "json2pathform": "./json2pathform.js"
+  },
+  "keywords": [
+    "pathform",
+    "json",
+    "parser",
+    "llm",
+    "ai",
+    "format",
+    "text-format",
+    "structured-data"
+  ],
+  "author": "Mehmet T. AKALIN (makalin)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makalin/pathform.git"
+  },
+  "files": [
+    "pathform.js",
+    "pathform.browser.js",
+    "pathform.ts",
+    "pathform.d.ts",
+    "pathform2json.js",
+    "json2pathform.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
+

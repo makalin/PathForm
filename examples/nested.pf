@@ -1,0 +1,21 @@
+# Nested Structure Example
+
+config.app.name = "MyApp"
+config.app.version = "1.0.0"
+config.app.debug = false
+
+config.database.host = localhost
+config.database.port = 5432
+config.database.name = myapp_db
+config.database.ssl = true
+
+config.features[0].name = "feature1"
+config.features[0].enabled = true
+config.features[1].name = "feature2"
+config.features[1].enabled = false
+
+api.endpoints[0].path = /users
+api.endpoints[0].method = GET
+api.endpoints[1].path = /posts
+api.endpoints[1].method = POST
+

@@ -1,0 +1,41 @@
+# Green Wave Advisor Configuration
+# Example PathForm file
+
+# Metadata
+task.id = "green_wave_istanbul_001"
+task.type = route_plan
+task.lang = tr
+
+# Driver / context
+driver.id = 987654
+driver.experience_level = "intermediate"
+
+city.name = "Istanbul"
+city.zone = "Kadikoy"
+city.country = "TR"
+
+# Sensor-like inputs
+input.current_speed_kmh = 43
+input.distance_to_next_light_m = 250
+input.next_light_state = green
+input.next_light_time_to_change_sec = 18
+
+# Model config
+model.name = gpt-5.1
+model.temperature = 0.1
+model.max_tokens = 256
+
+# Constraints
+constraints[0] = "Use friendly, non-technical Turkish"
+constraints[1] = "Max 2 short sentences"
+constraints[2] = "Recommend safe and legal speeds only"
+
+# Output hints
+output.type = object
+output.fields[0].name = "advice"
+output.fields[0].type = "string"
+output.fields[1].name = "recommended_speed_kmh"
+output.fields[1].type = "number"
+output.fields[2].name = "justification"
+output.fields[2].type = "string"
+
